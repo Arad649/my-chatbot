@@ -178,3 +178,11 @@
   </script>
 </body>
 </html>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b0b0c">
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
+  }
+</script>
+
